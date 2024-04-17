@@ -60,7 +60,7 @@ flask-sqlalchemy==2.4.3
     # via
     #   -r requirements.in
     #   flask-migrate
-gevent==20.9.0
+gevent==23.9.0
     # via -r requirements.in
 greenlet==0.4.17
     # via gevent
@@ -175,3 +175,4 @@ zope-interface==5.2.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
