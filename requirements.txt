@@ -64,7 +64,7 @@ gevent==20.9.0
     # via -r requirements.in
 greenlet==0.4.17
     # via gevent
-gunicorn==20.0.4
+gunicorn==22.0.0
     # via -r requirements.in
 idna==2.10
     # via requests
@@ -108,7 +108,7 @@ pybluemonday==0.0.9
     # via -r requirements.in
 pycparser==2.20
     # via cffi
-pydantic==1.6.2
+pydantic==1.10.13
     # via -r requirements.in
 pymysql==0.9.3
     # via -r requirements.in
@@ -175,3 +175,4 @@ zope-interface==5.2.0
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
+setuptools>=65.5.1 # not directly required, pinned by Snyk to avoid a vulnerability
